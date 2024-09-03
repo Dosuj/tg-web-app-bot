@@ -5,7 +5,7 @@ const cors = require('cors');
 require('dotenv').config();
 
 const webAppUrl = 'https://main--subtle-wisp-d2da50.netlify.app';
-// const .env = ".env from BotFather"
+// const token = ".env from BotFather"
 
 const bot = new TelegramBot(process.env.token, {polling: true});
 const app = express();
