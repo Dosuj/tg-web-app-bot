@@ -1,9 +1,10 @@
 const TelegramBot = require('node-telegram-bot-api');
 const express = require('express');
 const cors = require('cors');
+import token from '../token'; // this is my token :)
 
-const token = '7390809352:AAFVEnGAiAJeXWKC5qpXYaNvFMonQvufRWI';
 const webAppUrl = 'https://main--subtle-wisp-d2da50.netlify.app';
+// const token = "token from BotFather"
 
 const bot = new TelegramBot(token, {polling: true});
 const app = express();
